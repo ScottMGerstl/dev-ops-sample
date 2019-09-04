@@ -34,6 +34,7 @@ export namespace Components {
     'type': 'submit' | 'button' | 'link' | 'menu';
     'xsmall': boolean;
   }
+  interface HiveUiCard {}
   interface HiveUiCheckbox {
     /**
     * If `true`, the checkbox is selected.
@@ -248,6 +249,12 @@ declare global {
     new (): HTMLHiveUiButtonElement;
   };
 
+  interface HTMLHiveUiCardElement extends Components.HiveUiCard, HTMLStencilElement {}
+  var HTMLHiveUiCardElement: {
+    prototype: HTMLHiveUiCardElement;
+    new (): HTMLHiveUiCardElement;
+  };
+
   interface HTMLHiveUiCheckboxElement extends Components.HiveUiCheckbox, HTMLStencilElement {}
   var HTMLHiveUiCheckboxElement: {
     prototype: HTMLHiveUiCheckboxElement;
@@ -328,6 +335,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'hive-ui-alert': HTMLHiveUiAlertElement;
     'hive-ui-button': HTMLHiveUiButtonElement;
+    'hive-ui-card': HTMLHiveUiCardElement;
     'hive-ui-checkbox': HTMLHiveUiCheckboxElement;
     'hive-ui-checklist': HTMLHiveUiChecklistElement;
     'hive-ui-dropdown': HTMLHiveUiDropdownElement;
@@ -369,6 +377,7 @@ declare namespace LocalJSX {
     'type'?: 'submit' | 'button' | 'link' | 'menu';
     'xsmall'?: boolean;
   }
+  interface HiveUiCard extends JSXBase.HTMLAttributes<HTMLHiveUiCardElement> {}
   interface HiveUiCheckbox extends JSXBase.HTMLAttributes<HTMLHiveUiCheckboxElement> {
     /**
     * If `true`, the checkbox is selected.
@@ -609,6 +618,7 @@ declare namespace LocalJSX {
   interface IntrinsicElements {
     'hive-ui-alert': HiveUiAlert;
     'hive-ui-button': HiveUiButton;
+    'hive-ui-card': HiveUiCard;
     'hive-ui-checkbox': HiveUiCheckbox;
     'hive-ui-checklist': HiveUiChecklist;
     'hive-ui-dropdown': HiveUiDropdown;
