@@ -11,7 +11,6 @@ import { Angulartics2Module } from 'angulartics2';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared';
 
 @NgModule({
     declarations: [
@@ -26,7 +25,6 @@ import { SharedModule } from './shared';
         AngularFireAuthModule,
         AngularFireFunctionsModule,
         Angulartics2Module.forRoot(),
-        SharedModule,
         IonicModule.forRoot(),
         TranslateModule.forRoot()
     ],
