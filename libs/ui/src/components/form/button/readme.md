@@ -24,13 +24,6 @@
 | `tap` | Event emitted each time the button is clicked | `CustomEvent<any>` |
 
 
-## CSS Custom Properties
-
-| Name              | Description                                           |
-| ----------------- | ----------------------------------------------------- |
-| `--inner-padding` | The inner padding surrounding the text of the button. |
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

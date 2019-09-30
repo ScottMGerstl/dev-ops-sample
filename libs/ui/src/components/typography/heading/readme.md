@@ -22,13 +22,6 @@
 | `xxlarge`  | `xxlarge`   |                                                                                                                       | `boolean`                                                                                                                                                                                                                                                                                | `undefined` |
 
 
-## CSS Custom Properties
-
-| Name            | Description                |
-| --------------- | -------------------------- |
-| `--font-family` | Font family of the heading |
-
-
 ## Dependencies
 
 ### Used by
